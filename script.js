@@ -1,4 +1,11 @@
 
+document.getElementById('taskList').addEventListener('click', function (event) {
+    if (event.target.tagName === 'LI') {
+      event.target.classList.toggle('completed');
+    }
+  });
+
+
 function editTask(taskContent) {
     const newText = prompt('Edit your task:', taskContent.textContent);
     if (newText !== null) {
@@ -25,8 +32,6 @@ deleteButton.className = 'delete-button';
 deleteButton.addEventListener('click', function () {
   taskList.removeChild(listItem);
 });
-=======
-
 const filterButtons = document.querySelectorAll('.filter-button');
 
 filterButtons.forEach(button => button.addEventListener('click', function (event) {
@@ -72,4 +77,5 @@ function addTask() {
   taskInput.value = ''; // Clear input field
 }
    
+
 

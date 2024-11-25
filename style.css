@@ -1,3 +1,9 @@
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
@@ -71,3 +77,4 @@ body {
     padding: 0;
   }
   
+
