@@ -1,4 +1,12 @@
 
+const deleteButton = document.createElement('button');
+deleteButton.textContent = 'Delete';
+deleteButton.className = 'delete-button';
+deleteButton.addEventListener('click', function () {
+  taskList.removeChild(listItem);
+});
+=======
+
 const filterButtons = document.querySelectorAll('.filter-button');
 
 filterButtons.forEach(button => button.addEventListener('click', function (event) {
@@ -44,4 +52,3 @@ function addTask() {
   taskInput.value = ''; // Clear input field
 }
    
-
